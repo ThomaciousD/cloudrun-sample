@@ -34,5 +34,5 @@ jobs:
         
     - name: Destroy Cloud Run deployment
       run: |-
-        gcloud run gcloud run services delete ${{ env.SERVICE }} \
+        gcloud run services delete ${{ env.SERVICE }} \
           --region ${{ env.REGION }} \
