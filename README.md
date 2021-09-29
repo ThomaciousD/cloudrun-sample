@@ -11,7 +11,9 @@ gcloud auth login
 gcloud config set project $PROJECT_ID
 ```
 
-# setup projecct (https://github.com/google-github-actions/setup-gcloud/blob/master/example-workflows/cloud-run/README.md)
+# setup project
+*Using the instructions here:  (https://github.com/google-github-actions/setup-gcloud/blob/master/example-workflows/cloud-run/README.md)*
+
 ## Enable the Cloud Run API gcloud 
 ```shell
 services enable run.googleapis.com
