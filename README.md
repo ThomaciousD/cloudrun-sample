@@ -2,13 +2,14 @@
 cloudrun-sample
 
 # Pre-requisites
-Google Cloud command line SDK: https://cloud.google.com/sdk/docs/install
-Github command line: https://github.com/cli/cli
+Install Google Cloud command line SDK: https://cloud.google.com/sdk/docs/install and Github command line: https://github.com/cli/cli
 
 # authenticate gcloud
+```shell
 export PROJECT_ID=<your_project_id_here>
 gcloud auth login
 gcloud config set project $PROJECT_ID
+```
 
 # setup projecct (https://github.com/google-github-actions/setup-gcloud/blob/master/example-workflows/cloud-run/README.md)
 ## Enable the Cloud Run API gcloud 
