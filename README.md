@@ -16,7 +16,7 @@ gcloud config set project $PROJECT_ID
 
 ### Enable the Cloud Run API gcloud 
 ```shell
-services enable run.googleapis.com
+gcloud services enable run.googleapis.com
 ```
 
 ### Create a Google Cloud service account or select an existing one
