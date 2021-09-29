@@ -50,4 +50,5 @@ jobs:
           --region ${{ env.REGION }} \
           --image gcr.io/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{  github.sha }} \
           --platform "managed" \
+          --allow-unauthenticated \
           --quiet 
