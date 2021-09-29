@@ -45,8 +45,22 @@ gh auth login
 # List your Github Repos
 gh repo list
 
-# Then configure the secrets in the target repo
+# Setup an env var with your target repo
 export GH_REPO=<your_github_repo_here>
+
+# Then configure the secrets in the target repo
 gh secret set GCP_PROJECT -r $GH_REPO
 gh secret set GCP_SA_KEY -r $GH_REPO < account.json
+```
+
+# Run pipelines
+
+List available workflow:
+```shell
+gh workflow list
+```
+
+To run a pipeline
+```shell
+gh workflow run <workflow_id>
 ```
