@@ -37,6 +37,9 @@ jobs:
         project_id: ${{ env.PROJECT_ID }}
         service_account_key: ${{ secrets.GCP_SA_KEY }}
 
+    - name: Check gcloud auth
+      run: gcloud config get-value account
+
     - name: Authorize Docker push
       run: gcloud auth configure-docker
 
